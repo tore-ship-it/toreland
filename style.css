@@ -1,10 +1,10 @@
 body{
-    color: white;
+    background-color: #968B8B;
     margin: 0%;
 }
 
 .box{
     height: 10vw;
     width: 100vw;
-    background-color: black;
+    background-color: #D9D9D9;
 }
