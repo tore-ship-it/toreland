@@ -10,8 +10,21 @@ body{
     position: fixed;
 }
 
-.box p{
+.box p {
     margin: 0;
     font-size: 40px;
-    margin-top: 0;
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+
+.box h1{
+    position: absolute;
+    top: 35px;
+    left: 38%;
+}
+
+.box img{
+    width: 50px;
+    height: 50px;
 }
