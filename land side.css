@@ -2,3 +2,6 @@ h1{
     position: fixed;
     margin-right: 80%;
 }
+.Info{
+    justify-content: right;
+}

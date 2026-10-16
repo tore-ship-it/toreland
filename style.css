@@ -1,16 +1,17 @@
 body{
     background-color: #968B8B;
-    margin: 0%;
+    margin: 0;
 }
 
 .box{
     height: 10vw;
     width: 100vw;
     background-color: #D9D9D9;
+    position: fixed;
 }
 
 .box p{
     margin: 0;
-    font-size: 50px;
-    margin-top: 5vh;
+    font-size: 40px;
+    margin-top: 0;
 }
