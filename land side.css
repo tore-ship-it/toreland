@@ -3,6 +3,6 @@ h1{
     margin-right: 80%;
 }
 .Info{
-    position: fixed;
+    justify-content: right;
     margin-left: 20px;
 }
