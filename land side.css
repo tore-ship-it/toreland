@@ -4,4 +4,9 @@ h1{
 }
 .Info{
     justify-content: right;
+    margin-left: 20%;
 }
+.flag img{
+    width: 800px;
+    height: auto;
+}   
