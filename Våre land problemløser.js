@@ -6,6 +6,15 @@ const landKoder = [
     "BI", "CA", "CL", "CO"
 ];
 
+const landNavn = [
+    "Abkhazia", "Afghanistan", "Albania", "Algerie", "Andorra", "Angola", 
+    "Antigua og Barbuda", "Argentina", "Armenia", "Aserbajdsjan", "Østerrike", 
+    "Australia", "Øst-Timor", "Bahamas", "Bahrain", "Bangladesh", "Barbados", 
+    "Belarus", "Belgia", "Belize", "Benin", "Bhutan", "Bolivia", 
+    "Bosnia og Hercegovina", "Botswana", "Brasil", "Britania", "Brunei", 
+    "Bulgaria", "Burkina Faso", "Burundi", "Canada", "Chile", "Colombia"
+];
+
 
 for (i = 0; i<landKoder.length; i++){
     let newDiv = document.createElement("div");
@@ -13,7 +22,7 @@ for (i = 0; i<landKoder.length; i++){
     link.setAttribute("href", "land side.html")
     let bilde = document.createElement("img");
     let navn = document.createElement("p");
-    navn.textContent = landKoder[i].split(".")[0];
+    navn.textContent = landNavn[i].split(".")[0];
 
     let flagUrl = 'https://flagsapi.com/' + landKoder[i] + '/flat/64.png';
     bilde.setAttribute("src", flagUrl);
