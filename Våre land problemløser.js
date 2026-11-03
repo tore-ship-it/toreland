@@ -213,6 +213,8 @@ for (i = 0; i<landKoder.length; i++){
     let bilde = document.createElement("img");
     let navn = document.createElement("p");
     navn.textContent = landNavn[i].split(".")[0];
+    bilde.className = "landBilde"
+    navn.className = "landTekst"
 
     let flagUrl = 'https://flagsapi.com/' + landKoder[i] + '/flat/64.png';
     bilde.setAttribute("src", flagUrl);
