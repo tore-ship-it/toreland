@@ -48,3 +48,7 @@ body {
     height: 50px;
     object-fit: contain;
 }
+
+.box a.uten-pil::after {
+    content: "";
+}
