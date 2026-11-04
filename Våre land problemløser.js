@@ -410,10 +410,10 @@ const landNavn = [
 ];
 
 
-for (i = 0; i<landKoder.length; i++){
+for (let i = 0; i<landKoder.length; i++){
     let newDiv = document.createElement("div");
     let link = document.createElement("a")
-    link.setAttribute("href", "abkhasia.html")
+    link.setAttribute("href", landNavn[i]+".html");
     let bilde = document.createElement("img");
     let navn = document.createElement("p");
     navn.textContent = landNavn[i].split(".")[0];
