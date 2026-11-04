@@ -12,8 +12,8 @@ h1{
 .landBilde {
     display: flex;
     justify-content: center;
-    width: 15vw;
-    height: 10vw;
+    width: 20vw;
+    height: 12vw;
 }
 
 .landTekst {
