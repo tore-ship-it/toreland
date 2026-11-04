@@ -3,7 +3,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #4dff00;
+    background-color: #999999;
 }
 h1{
     color:white
