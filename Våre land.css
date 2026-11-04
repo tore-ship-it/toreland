@@ -13,10 +13,13 @@ h1{
     display: flex;
     justify-content: center;
     width: 15vw;
+    height: 10vw;
 }
 
 .landTekst {
     display: flex;
     justify-content: center;
-    font-size: 2vw;
+    width: inherit;
+    font-size: 10svg;
+    flex-wrap: wrap;
 }
