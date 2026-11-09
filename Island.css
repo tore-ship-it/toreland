@@ -1,0 +1,36 @@
+h1{
+    position: fixed;
+    margin-right: 80%;
+    margin-top: 10px;
+    font-size: 50px;
+}
+.Info{
+    justify-content: right;
+    margin-left: 70%;
+    margin-top: -400px;
+    font-size: 30px;
+}
+.flag img{
+    width: 800px;
+    height: auto;
+    margin-top: 70px;
+}   
+.om-landet{
+    margin-top: 60px;
+    font-size: 20px;
+}
+body{
+    background-color: #999999;
+}
+.hjem-knapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.hjem-knapp:hover {
+    background-color: #555;
+}
