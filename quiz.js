@@ -56,6 +56,11 @@ function selectAnswer(button, isCorrect) {
     score++;
   } else {
     button.classList.add("feil");
+    questions[currentIndex].answers.forEach((answer, index) => {
+      if (answer.correct) {
+        answerButtonsEl.children[index].classList.add("riktig");
+      }
+    });
   }
   Array.from(answerButtonsEl.children).forEach(btn => btn.disabled = true);
   nextBtn.style.display = "block";
