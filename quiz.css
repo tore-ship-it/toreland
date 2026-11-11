@@ -1,0 +1,32 @@
+body { 
+    font-family: sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 50px; 
+    background-color: #999999;
+}
+
+.quiz-container { 
+    width: 400px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9;
+}
+
+.knapp { 
+    display: block; 
+    width: 100%; 
+    margin: 8px 0; 
+    padding: 10px; 
+    cursor: pointer; 
+    border: 1px solid #000000; 
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.riktig { 
+    background-color: #a8e6cf; 
+}
+.feil { 
+    background-color: #ff8b94; 
+}
