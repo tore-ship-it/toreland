@@ -68,7 +68,7 @@ const questions = [
       { text: "Ur a gay", correct: true },
       { text: "Ur a gay", correct: true },
       { text: "Ur a gay", correct: true },
-      { text: "Ur a gayest", correct: true },
+      { text: "Ur a gayest", correct: false },
     ]
   },
   {
@@ -95,6 +95,7 @@ let currentIndex = 0;
 let score = 0;
 
 const questionEl = document.getElementById("question");
+const questionNumberEl = document.getElementById("question-number");
 const answerButtonsEl = document.getElementById("answer-buttons");
 const nextBtn = document.getElementById("next-btn");
 
@@ -102,6 +103,7 @@ function showQuestion() {
   answerButtonsEl.innerHTML = "";
   nextBtn.style.display = "none";
   const current = questions[currentIndex];
+  questionNumberEl.innerText = `Spørsmål nr. ${currentIndex + 1}`;
   questionEl.innerText = current.question;
 
   current.answers.forEach(answer => {
@@ -134,6 +136,7 @@ nextBtn.onclick = () => {
   if (currentIndex < questions.length) {
     showQuestion();
   } else {
+    questionNumberEl.style.display = "none";
     questionEl.innerText = `Gratulerer! Din score ble: ${score}/${questions.length}`;
     answerButtonsEl.innerHTML = "";
     nextBtn.style.display = "none";
