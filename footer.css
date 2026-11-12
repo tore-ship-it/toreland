@@ -1,5 +1,36 @@
-footer{
+.site-footer {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 100vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
     width: 100vw;
-    height: 10vw;
-    background-color:cadetblue;
+    margin: 32px calc(50% - 50vw) calc(50% - 50vw);
+    padding: 28px 38px;
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.site-footer section {
+    flex: 1 1 280px;
+}
+
+.site-footer h2,
+.site-footer p,
+.site-footer ul {
+    margin: 0 0 12px;
+}
+
+.site-footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.site-footer li + li {
+    margin-top: 8px;
+}
+
+.site-footer a {
+    color: inherit;
 }
