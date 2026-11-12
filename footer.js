@@ -14,6 +14,14 @@
                 <li>Telefon nummer: +47 405 14 006</li>
             </ul>
         </section>
+        <section class="footer-roles">
+            <h2>Ledelse</h2>
+            <ul>
+                <li>Head CEO: Tore Godal</li>
+                <li>CFO: Jonas Clausen</li>
+                <li>CTO: Martin Syrrist</li>
+            </ul>
+        </section>
     `;
 
     if (!footer.isConnected) {
