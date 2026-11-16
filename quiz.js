@@ -81,7 +81,7 @@ const questions = [
     ]
   },
   {
-    question: "Finalespørsmål(vert 10 poeng), hva er arealet til Toreland?",
+    question: "Viktig spørsmål, hva er arealet til Toreland?",
     answers: [
       { text: "Tore sitt pollytrack potensial", correct: false },
       { text: "Samme som Afghanistan", correct: true },
@@ -98,6 +98,11 @@ const questionEl = document.getElementById("question");
 const questionNumberEl = document.getElementById("question-number");
 const answerButtonsEl = document.getElementById("answer-buttons");
 const nextBtn = document.getElementById("next-btn");
+
+for (let i = questions.length - 1; i > 0; i--) {
+  const randomIndex = Math.floor(Math.random() * (i + 1));
+  [questions[i], questions[randomIndex]] = [questions[randomIndex], questions[i]];
+}
 
 function showQuestion() {
   answerButtonsEl.innerHTML = "";
