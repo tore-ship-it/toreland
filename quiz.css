@@ -26,9 +26,7 @@ body {
     background-color: #b6b6b6;
     font-size: 30px;
 }
-.knapp:hover { 
-    background-color: #999999; 
-}
+
 .riktig { 
     background-color: #1e632b; 
 }
@@ -58,4 +56,8 @@ body {
 #question { 
     margin-bottom: 20px; 
     text-align: center; 
+}
+.knapp:disabled {
+    color: #000;
+    opacity: 1;
 }

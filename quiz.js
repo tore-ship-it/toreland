@@ -89,25 +89,118 @@ const questions = [
       { text: "Hva sa hun?", correct: false },
     ]
   },
+  {
+    question: "Hvor mange innbyggere er det i Canada?",
+    answers: [
+      { text: "Fem", correct: false },
+      { text: "Hauk thua spit on that thing", correct: false },
+      { text: "56 røvere bak en stein", correct: false },
+      { text: "2 tennisballer ut av 58 katter i suppe", correct: true },
+    ]
+  },
+  {
+    question: "Hva er hovedstaden i Tyskland?",
+    answers: [
+      { text: "Senegal", correct: false },
+      { text: "Holmlia", correct: false },
+      { text: "Berlin", correct: true },
+      { text: "Litchenstein", correct: false },
+    ]
+  },
+  {
+    question: "Hva er språket i mikroasia?",
+    answers: [
+      { text: "Mikroasisk", correct: false },
+      { text: "To maur spiste den.", correct: true },
+      { text: "Imsdal, Monster og Villa(alle med vann)", correct: false },
+      { text: "Hubspot nr. 1", correct: false },
+    ]
+  },
+  {
+    question: "Hvordan ser DDR stitt flagg ut?",
+    answers: [
+      { text: "Hvitt felt med en rød kant. Neida jeg tuller.", correct: true },
+      { text: "Auf der Heide blüht ein kleines Blümelein. Und das heißt ...", correct: false },
+      { text: "Goonepixel", correct: false },
+      { text: "Rødt, gult og svart", correct: false },
+    ]
+  },
+  {
+    question: "Hvem oppfant sakkosekken?",
+    answers: [
+      { text: "Antonio Sakkosekki", correct: true },
+      { text: "Anne Frank", correct: false },
+      { text: "Albert Stein", correct: false },
+      { text: "Adolf Godal", correct: false },
+    ]
+  },
+  {
+    question: "Hva oppfant Kristoffer nudelsang?",
+    answers: [
+      { text: "Hentai", correct: false },
+      { text: "Ramen", correct: false },
+      { text: "Nudelbretten", correct: true },
+      { text: "Monopolbrettet til bestefaren", correct: false },
+    ]
+  },
+  {
+    question: "Hvilken stor hendelse sjedde i Marokko 2022?",
+    answers: [
+      { text: "De spise alle kamelene til Vest-Sahara", correct: false },
+      { text: "3. Verdenskonflikt", correct: false },
+      { text: "Benjamin Netanyahu", correct: false },
+      { text: "De kastet 50,000 tonn plast i matavfallet.", correct: true },
+    ]
+  },
+  {
+    question: "Hva er styreformen til Nigeria?",
+    answers: [
+      { text: "7 Blekkspruter", correct: false },
+      { text: "Gryansk ostepop strupesang", correct: true },
+      { text: "Konstantrepublikk", correct: false },
+      { text: "Eins Swei Drei", correct: false },
+    ]
+  },
+  {
+    question: "Hvor mange innbyggere bor det i Aserbajdsjan?",
+    answers: [
+      { text: "67", correct: false },
+      { text: "Gamb(ling)ia sine portrettmalerier", correct: false },
+      { text: "1,000,000", correct: false },
+      { text: "Er det egentlig så viktig?", correct: true },
+    ]
+  },
+  {
+    question: "Hva fikk innbyggerne i Colombia til å se bort fra krig?",
+    answers: [
+      { text: "Infanteriet til frankriket", correct: false },
+      { text: "Mac and cheese med såpebobler", correct: true },
+      { text: "Hitler og Stalin", correct: false },
+      { text: "Gambling og betting", correct: false },
+    ]
+  },
 ];
 
 let currentIndex = 0;
 let score = 0;
+const quizQuestionCount = 10;
+const quizQuestions = [...questions];
 
 const questionEl = document.getElementById("question");
 const questionNumberEl = document.getElementById("question-number");
 const answerButtonsEl = document.getElementById("answer-buttons");
 const nextBtn = document.getElementById("next-btn");
 
-for (let i = questions.length - 1; i > 0; i--) {
+for (let i = quizQuestions.length - 1; i > 0; i--) {
   const randomIndex = Math.floor(Math.random() * (i + 1));
-  [questions[i], questions[randomIndex]] = [questions[randomIndex], questions[i]];
+  [quizQuestions[i], quizQuestions[randomIndex]] = [quizQuestions[randomIndex], quizQuestions[i]];
 }
+quizQuestions.length = Math.min(quizQuestionCount, quizQuestions.length);
 
 function showQuestion() {
   answerButtonsEl.innerHTML = "";
   nextBtn.style.display = "none";
-  const current = questions[currentIndex];
+  const current = quizQuestions[currentIndex];
   questionNumberEl.innerText = `Spørsmål nr. ${currentIndex + 1}`;
   questionEl.innerText = current.question;
 
@@ -126,7 +219,7 @@ function selectAnswer(button, isCorrect) {
     score++;
   } else {
     button.classList.add("feil");
-    questions[currentIndex].answers.forEach((answer, index) => {
+    quizQuestions[currentIndex].answers.forEach((answer, index) => {
       if (answer.correct) {
         answerButtonsEl.children[index].classList.add("riktig");
       }
@@ -138,11 +231,11 @@ function selectAnswer(button, isCorrect) {
 
 nextBtn.onclick = () => {
   currentIndex++;
-  if (currentIndex < questions.length) {
+  if (currentIndex < quizQuestions.length) {
     showQuestion();
   } else {
     questionNumberEl.style.display = "none";
-    questionEl.innerText = `Gratulerer! Din score ble: ${score}/${questions.length}`;
+    questionEl.innerText = `Gratulerer! Din score ble: ${score}/${quizQuestions.length}`;
     answerButtonsEl.innerHTML = "";
     nextBtn.style.display = "none";
   }
