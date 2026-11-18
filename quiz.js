@@ -215,6 +215,60 @@ const questions = [
       { text: "Elfenbenskysten", correct: false },
     ]
   },
+   {
+    question: "Hva er Jordens største land?",
+    answers: [
+      { text: "Russland", correct: false },
+      { text: "Uganda", correct: false },
+      { text: "RKongo", correct: true },
+      { text: "Toreland", correct: false },
+    ]
+  },
+   {
+    question: "Hva var en av favorittene til Carl Magnus Johaug?",
+    answers: [
+      { text: "Valutaen til Nicaragua", correct: true },
+      { text: "Flagget til Liechtenstein", correct: false },
+      { text: "Miguel phonk", correct: false },
+      { text: "Ultraprosseserte poteter", correct: false },
+    ]
+  },
+  {
+    question: "Hva er infoen til flagget til Nord-Makedonia?",
+    answers: [
+      { text: "Kronologiske kiropraktorer", correct: false },
+      { text: "Stort headset-dent", correct: false },
+      { text: "Vanskelig å spise", correct: true },
+      { text: "Introen til Ringenes herre", correct: false },
+    ]
+  },
+  {
+    question: "Hva er styreformen til Pakistan?",
+    answers: [
+      { text: "Våpen", correct: false },
+      { text: "Medier og Komunikkasjon", correct: false },
+      { text: "Tiktok", correct: false },
+      { text: "Det velger de selv", correct: true },
+    ]
+  },
+  {
+    question: "Hva er styreformen til Spania?",
+    answers: [
+      { text: "Et komandosenter", correct: false },
+      { text: "Europris", correct: false },
+      { text: "Lamine Yamal", correct: true },
+      { text: "Propellcaps", correct: false },
+    ]
+  },
+  {
+    question: "Hva gjør alle i Tyrkia?",
+    answers: [
+      { text: "Smaker på kjøleskap", correct: false },
+      { text: "Snakker om klima", correct: false },
+      { text: "Spiser kebab", correct: false },
+      { text: "Snakker høyt i telefonen", correct: true },
+    ]
+  },
 ];
 
 let currentIndex = 0;
