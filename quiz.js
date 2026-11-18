@@ -227,8 +227,8 @@ const questions = [
    {
     question: "Hva var en av favorittene til Carl Magnus Johaug?",
     answers: [
-      { text: "Valutaen til Nicaragua", correct: true },
-      { text: "Flagget til Liechtenstein", correct: false },
+      { text: "Valutaen til Nicaragua", correct: false },
+      { text: "Flagget til Liechtenstein", correct: true },
       { text: "Miguel phonk", correct: false },
       { text: "Ultraprosseserte poteter", correct: false },
     ]
