@@ -200,7 +200,7 @@ const questions = [
    {
     question: "Hva er ulovelig i Jordan?",
     answers: [
-      { text: "Airpods", correct: true },
+      { text: "Airpods", correct: false },
       { text: "Sveitsisk valutta", correct: false },
       { text: "Penner", correct: true },
       { text: "Det bermudiske treangel", correct: false },
