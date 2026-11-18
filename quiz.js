@@ -146,7 +146,7 @@ const questions = [
   {
     question: "Hvilken stor hendelse sjedde i Marokko 2022?",
     answers: [
-      { text: "De spise alle kamelene til Vest-Sahara", correct: false },
+      { text: "De spiste alle kamelene til Vest-Sahara", correct: false },
       { text: "3. Verdenskonflikt", correct: false },
       { text: "Benjamin Netanyahu", correct: false },
       { text: "De kastet 50,000 tonn plast i matavfallet.", correct: true },
@@ -177,6 +177,42 @@ const questions = [
       { text: "Mac and cheese med såpebobler", correct: true },
       { text: "Hitler og Stalin", correct: false },
       { text: "Gambling og betting", correct: false },
+    ]
+  },
+   {
+    question: "Hvilken valutta bruker de i Irak?",
+    answers: [
+      { text: "Indokinesiske stoler", correct: true },
+      { text: "Vindusviskere med ledlys", correct: false },
+      { text: "Kurdiske alfaer", correct: false },
+      { text: "Inkognito faner", correct: false },
+    ]
+  },
+   {
+    question: "I Jamaica, hva kan gjøre at du kan bli offentlig henrettet i en vulkan?",
+    answers: [
+      { text: "At du ikke spiser vann", correct: false },
+      { text: "At du ikke har braids", correct: true },
+      { text: "At du ikke går med adidas sko", correct: false },
+      { text: "At du ikke kan russisk", correct: false },
+    ]
+  },
+   {
+    question: "Hva er ulovelig i Jordan?",
+    answers: [
+      { text: "Airpods", correct: true },
+      { text: "Sveitsisk valutta", correct: false },
+      { text: "Penner", correct: true },
+      { text: "Det bermudiske treangel", correct: false },
+    ]
+  },
+   {
+    question: "Hva er det som innbyggerne i Nepal bruker som en oppskrift på livet?",
+    answers: [
+      { text: "Å smile", correct: true },
+      { text: "Trådløs lading", correct: false },
+      { text: "Flinke katter", correct: false },
+      { text: "Elfenbenskysten", correct: false },
     ]
   },
 ];
