@@ -1,5 +1,4 @@
 h1{
-    margin-right: 80%;
     margin-top: 10px;
     font-size: 50px;
 }
@@ -12,7 +11,7 @@ h1{
 .flag img{
     width: 1px;
     height: auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }   
 .om-landet{
     margin-top: 100px;
